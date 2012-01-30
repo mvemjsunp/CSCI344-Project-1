@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>communiCITY</title>
+		<link rel="stylesheet" href="bootstrap-1.1.1.css">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+		
+		<script src="http://twitter.github.com/bootstrap/1.4.0/bootstrap-modal.js"></script>
+		<script>
+$(document).ready(function() {						//as soon as document is ready this script starts loading
+													//	var text = $("#example_paragraph").text();
+													//	alert(text);
+													//	$("#name_header").text("Hello, Rebekah");
+	$("#modal-from-dom").bind('show', function() {	//anonymous function
+			var name = $("#name").val();
+			$("#name_header").text("Hello, " + name);
+	});	
+});
+		</script>
+		</head>
+		
+	<body>
+		<div class="topbar">
+			<div class="fill">
+				<div class="container">
+						<h3><a href="#">communi<strong>CITY</strong></a></h3>
+						<ul>
+							<li class="active"><a href="#">ABOUT</a></li>
+							<li><a href="#">PARTICIPANTS</a></li>
+							<li><a href="#">PROBLEMS</a></li>
+							<li><a href="#">PRESS</a></li>
+						</ul>
+						<ul class="nav secondary-nav">
+							<li class="menu">
+								<a href="#" class="menu">Enter Site</a>
+								<ul class="menu-dropdown">
+									<li><strong><a href="#">Log in</a></strong></li>
+									<li class="divider"></li>
+									<li><a href="#">Register as a new member</a></li>
+									<li><a href="#">Sign in as a guest</a></li>
+								</ul>
+							</li>
+						</ul>
+				</div>
+			</div>
+		</div>
+
+		
+		<div id="modal-from-dom" class="modal hide fade">
+			<div class="modal-header">
+				<a href="#" class="close">&times;</a>
+				<h3 id="name_header"></h3>
+			</div>
+			<div class="modal-body">
+				<p>One fine body.</p>
+			</div>
+			<div class="modal-footer">
+				<a href="#" class="btn primary">Primary</a>
+				<a href="#" class="btn secondary">Secondary</a>
+			</div>
+		</div>
+		
+		<div class="container">
+			<label>Tell me your name:</label>
+			<input id="name" type="text/">
+			<button data-controls-modal="modal-from-dom"
+					data-backdrop="true"
+					data-keyboard="true"
+					class="btn danger">Click Me</button>
+		</div>
+		
+	</body>
+</html>

@@ -171,6 +171,8 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+
 /* Preboot.less
  * Variables and mixins to pre-ignite any new web development project
  * ------------------------------------------------------------------ */
@@ -578,7 +580,7 @@ h1 small {
 }
 h2 {
   font-size: 24px;
-  line-height: 36px;
+  line-height: 24px;
 }
 h2 small {
   font-size: 14px;
@@ -586,8 +588,8 @@ h2 small {
 h3,
 h4,
 h5,
-h6 {
-  line-height: 36px;
+h6, {
+  line-height: 18px;
 }
 h3 {
   font-size: 18px;
@@ -596,7 +598,7 @@ h3 small {
   font-size: 14px;
 }
 h4 {
-  font-size: 16px;
+  font-size: 14px;
 }
 h4 small {
   font-size: 12px;
@@ -606,9 +608,10 @@ h5 {
 }
 h6 {
   font-size: 13px;
-  color: #bfbfbf;
+  color: #888;
   text-transform: uppercase;
 }
+
 ul, ol {
   margin: 0 0 18px 25px;
 }
@@ -717,6 +720,49 @@ pre {
   white-space: pre-wrap;
   word-wrap: break-word;
 }
+
+/* My added code
+ *
+ */
+.floatright {
+	float: right;
+}
+.belowtitle {
+	clear: both;
+	background-color: #f9f9f9;
+	margin-top: -70px;
+	padding: 15px 0px 20px 0px;
+	margin-left: 0px;
+	border-top: 1px solid #999;
+}
+
+.descriptor {
+	background-color: #EFE4E7;
+	padding: 30px 15px;
+}
+
+.nomargincenter {
+	margin: 0px;
+	text-align: center;
+}
+
+.marginminus {
+	margin: -15px -5px -10px 0px;
+}
+
+.topbottompadding {
+	padding-top: 35px;
+	padding-bottom: 35px;
+}
+
+.bigh2 {
+	font-size: 28px;
+}
+.biggerh2 {
+	margin-top: -5px;
+	font-size: 32px;
+}
+
 /* Forms.less
  * Base styles for various input types, form layouts, and states
  * ------------------------------------------------------------- */
@@ -1439,7 +1485,7 @@ table .headerSortUp.purple, table .headerSortDown.purple {
   border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 .hero-unit {
-  background-color: #f5f5f5;
+  background-color: #EFE4E7;
   margin-top: 60px;
   margin-bottom: 30px;
   padding: 60px;
@@ -1988,3 +2034,5 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
 .popover .content p, .popover .content ul, .popover .content ol {
   margin-bottom: 0;
 }
+
+

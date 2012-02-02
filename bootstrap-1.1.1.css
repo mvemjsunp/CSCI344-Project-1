@@ -728,17 +728,24 @@ pre {
 	float: right;
 }
 .belowtitle {
-	clear: both;
 	background-color: #f9f9f9;
 	margin-top: -70px;
 	padding: 15px 0px 20px 0px;
-	margin-left: 0px;
+
 	border-top: 1px solid #999;
 }
 
 .descriptor {
 	background-color: #EFE4E7;
-	padding: 30px 15px;
+	padding: 30px 0px;
+}
+.descriptor p {
+	font-size: 30px;
+	color:#3a3a3a;
+	line-height: 40px;
+	font-weight: bold;
+	background-color: #EFE4E7;
+	padding: 10px 40px;
 }
 
 .nomargincenter {
@@ -747,7 +754,11 @@ pre {
 }
 
 .marginminus {
-	margin: -15px -5px -10px 0px;
+	margin: -55px -30px 0px 0px;
+}
+
+.marginminuslogo {
+	margin: -55px 0px -10px 0px;
 }
 
 .topbottompadding {
@@ -759,8 +770,20 @@ pre {
 	font-size: 28px;
 }
 .biggerh2 {
-	margin-top: -5px;
 	font-size: 32px;
+}
+.imgrow {
+	background: #934159;
+	color: #efefef;
+	font-size: 17px;
+	text-align: center;
+}
+
+.marginminusleft {
+	margin-left: -20px;
+}
+.marginminustop {
+	margin-top: -15px;
 }
 
 /* Forms.less

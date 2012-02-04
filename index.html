@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<title>communiCITY</title>
 		<link rel="stylesheet" href="bootstrap-1.1.1.css">
+				<link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
 		
@@ -14,14 +15,35 @@ $(document).ready(function() {						//as soon as document is ready this script s
 													//	alert(text);
 													//	$("#name_header").text("Hello, Rebekah");
 	$("#modal-from-dom").bind('show', function() {	//anonymous function
-			var name = $("#name").val();
-			$("#name_header").text("Hello, " + name);
+		var name = $("#name").val();
+		$("#name_header").text("Hello, " + name);
 	});	
 });
 		</script>
 		</head>
 		
 	<body>
+		
+		<div id="modal-from-dom" class="modal hide fade">
+			<div class="modal-header">
+				<a href="#" class="close">&times;</a>
+				<h3 id="name_header"></h3>
+			</div>
+			<div class="modal-body">
+				<p>Already a member?</p>
+				<label>USERNAME&nbsp;</label>
+				<input id="name" type="text/"><br />
+				<label>PASSWORD&nbsp;</label>
+				<input id="password" type="text/">
+				<a href="#" class="btn primary">Log in</a>
+			</div>
+			<div class="modal-footer">
+				<a href="#" class="btn primary">Register as a new member.</a>
+				<a href="#" class="btn secondary">Sign in as a guest.</a>
+			</div>
+		</div>
+		
+		
 		<div class="topbar">
 			<div class="fill">
 				<div class="container">
@@ -33,19 +55,16 @@ $(document).ready(function() {						//as soon as document is ready this script s
 							<li><a href="#">PRESS</a></li>
 						</ul>
 						<ul class="nav secondary-nav">
-							<li class="menu">
-								<a href="#" class="menu">Enter Site</a>
-								<ul class="menu-dropdown">
-									<li><strong><a href="#">Log in</a></strong></li>
-									<li class="divider"></li>
-									<li><a href="#">Register as a new member</a></li>
-									<li><a href="#">Sign in as a guest</a></li>
-								</ul>
-							</li>
+								<button data-controls-modal="modal-from-dom"
+										data-backdrop="true"
+										data-keyboard="true"
+										class="btn info">Enter Site</button>
 						</ul>
 				</div>
 			</div>
 		</div>
+		
+
 
 
 		<div class="hero-unit">
@@ -65,19 +84,21 @@ $(document).ready(function() {						//as soon as document is ready this script s
 
 		<div class="row yellowbg">
 			<div class="row">
-				<div class=" belowtitle">
-					<form>
-					<div class="offset8"><h1>SELECT YOUR CITY: &nbsp;&nbsp;
-						<select>
-						<option value=""></option>
-						<option value="asheville">Asheville, NC</option>
-						<option value="greenville">Greenville, SC</option>
-						<option value="columbia">Columbia, SC</option>
-						</select>
-						&nbsp;<img src="logofinal.png" height="30px">
-						</h1>
+					<div class=" belowtitle">
+						<div class="container">
+						<form>
+							<div class="offset3"><h1>SELECT YOUR CITY: &nbsp;&nbsp;
+								<select>
+									<option value=""></option>
+									<option value="asheville">Asheville, NC</option>
+									<option value="greenville">Greenville, SC</option>
+									<option value="columbia">Columbia, SC</option>
+								</select>
+							&nbsp;<img src="logofinal.png" height="30px">
+							</h1>
+							</div>
+						</form>
 					</div>
-					</form>
 				</div>
 			</div>
 			
@@ -146,32 +167,35 @@ $(document).ready(function() {						//as soon as document is ready this script s
 		
 		<div class="row">
 			<div class="footer">
-				<div class="span3 offset7">
-					<h6>ABOUT</h6>
-					<a href="#">About communiCITY</a><br />
-					<a href="#">FAQ</a><br />
-					<a href="#">News and Updates</a>
+				<div class="container">
+					<div class="span3">
+						<h6>ABOUT</h6>
+						<a href="#">About communiCITY</a><br />
+						<a href="#">FAQ</a><br />
+						<a href="#">News and Updates</a>
+					</div>
+					<div class="span3">
+						<h6>CONTACT</h6>
+						<a href="#">Questions?</a><br />
+						<a href="#">Like us on Facebook</a><br />
+						<a href="#">Follow us on Twitter</a>
+					</div>
+					<div class="span3 offset3">
+						<a href="#">PRIVACY POLICY</a><br />
+						<a href="#">TERMS OF USE</a><br />
+						<a href="#">CONTENT GUIDELINES</a><br />
+						<a href="#">COMMUNITY PARTNERS</a><br />
+						<a href="#">BLOG</a>
+					</div>
+					<div class="span3">
+						<a href="#"><img src="facebook.png"></a>
+						<a href="#"><img src="twitter.png"></a>
+						<a href="#"><img src="google+color.png"></a>
+						<a href="#"><img src="rss.png"></a>
+						<a href="#"><img src="blogger.png"></a>
+						<a href="#"><img src="youtube.png"></a>
+					</div>
 				</div>
-				<div class="span3">
-					<h6>CONTACT</h6>
-					<a href="#">Questions?</a><br />
-					<a href="#">Like us on Facebook</a><br />
-					<a href="#">Follow us on Twitter</a>
-				</div>
-				<div class="span3 offset3">
-					<a href="#">PRIVACY POLICY</a><br />
-					<a href="#">TERMS OF USE</a><br />
-					<a href="#">CONTENT GUIDELINES</a><br />
-					<a href="#">COMMUNITY PARTNERS</a><br />
-					<a href="#">BLOG</a>
-				</div>
-				<div class="span3">
-					<a href="#"><img src="facebook.png"></a>
-					<a href="#"><img src="twitter.png"></a>
-					<a href="#"><img src="google+color.png"></a>
-					<a href="#"><img src="rss.png"></a>
-					<a href="#"><img src="blogger.png"></a>
-					<a href="#"><img src="youtube.png"></a>
 			</div>
 		</div>
 		

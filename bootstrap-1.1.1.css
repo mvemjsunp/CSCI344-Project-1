@@ -727,6 +727,10 @@ pre {
 .floatright {
 	float: right;
 }
+
+.floatleft {
+	float: left;
+}
 .belowtitle {
 	background-color: #FFCE00;
 	margin-top: -70px;
@@ -809,6 +813,22 @@ pre {
 
 .yellowborderbottom {
 	border-bottom: 8px solid #FFCE00;
+}
+
+.blueborderbottom {
+	border-bottom: 10px solid #01689C;
+}
+.thinborderbottom {
+	border-bottom: 1px solid #888;
+}
+
+.largertext {
+	font-size: 16px;
+}
+
+.borderright {
+	padding-right: 50px;
+	border-right: 1px solid #888;
 }
 
 /* Forms.less

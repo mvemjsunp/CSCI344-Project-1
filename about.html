@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>communiCITY</title>
+		<link rel="stylesheet" href="bootstrap-1.1.1.css">
+				<link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+		
+		<script src="http://twitter.github.com/bootstrap/1.4.0/bootstrap-modal.js"></script>
+		<script>
+$(document).ready(function() {						//as soon as document is ready this script starts loading
+													//	var text = $("#example_paragraph").text();
+													//	alert(text);
+													//	$("#name_header").text("Hello, Rebekah");
+	$("#modal-from-dom").bind('show', function() {	//anonymous function
+		var name = $("#name").val();
+		$("#name_header").text("Hello, " + name);
+	});	
+});
+		</script>
+		</head>
+		
+	<body>
+		
+		<div id="modal-from-dom" class="modal hide fade">
+			<div class="modal-header">
+				<a href="#" class="close">&times;</a>
+				<h3 id="name_header"></h3>
+			</div>
+			<div class="modal-body">
+				<p>Already a member?</p>
+				<label>USERNAME&nbsp;</label>
+				<input id="name" type="text/"><br />
+				<label>PASSWORD&nbsp;</label>
+				<input id="password" type="text/">
+				<a href="#" class="btn primary">Log in</a>
+			</div>
+			<div class="modal-footer">
+				<a href="#" class="btn primary">Register as a new member.</a>
+				<a href="#" class="btn secondary">Sign in as a guest.</a>
+			</div>
+		</div>
+		
+		
+		<div class="topbar">
+			<div class="fill">
+				<div class="container">
+						<h3><a href="index.html">communi<strong>CITY</strong></a></h3>
+						<ul>
+							<li class="active"><a href="#">ABOUT</a></li>
+							<li><a href="#">PARTICIPANTS</a></li>
+							<li><a href="#">PROBLEMS</a></li>
+							<li><a href="#">PRESS</a></li>
+						</ul>
+						<ul class="nav secondary-nav">
+								<button data-controls-modal="modal-from-dom"
+										data-backdrop="true"
+										data-keyboard="true"
+										class="btn info">Enter Site</button>
+						</ul>
+				</div>
+			</div>
+		</div>
+		
+
+
+
+		<div class="hero-unit blueborderbottom">
+			<div class="row">
+				<div class="container">
+					<div class="span8 "><img src="logoFinal.png">
+						<h2 class="offset1">the game that<br /></h2> 
+						<h2 class="bigh2 offset2">rewards you </h2><br />
+						<h2 class="offset1 marginminusless">&nbsp;&nbsp;&nbsp;for making your city 	</h2></span><br />
+						<h2 class="biggerh2 marginminusless offset2"><em>&nbsp;&nbsp;&nbsp;&nbsp;a better place</em></h2>
+					</div>
+					<img class="span7" src="community-illustration.png">
+				</div>
+					
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="container">
+				<div class="span8 largertext borderright">
+					<h1>What is communiCITY?</h1>
+					<p class="largertext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dui elit, tincidunt eget ornare nec, semper non sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras enim lectus, dictum sed ultrices sit amet, adipiscing vitae diam. Nullam et lacinia metus. Morbi metus est, posuere et aliquam eget, dapibus non est. Aliquam sit amet ligula urna. Quisque vel leo eget metus blandit sagittis. Duis sed imperdiet nibh. Pellentesque quis ullamcorper diam. Quisque nec nunc vel neque imperdiet commodo non at dui. Integer ut dui et metus eleifend pulvinar. Nam pellentesque varius diam eu posuere. Ut ipsum tortor, viverra et viverra vitae, suscipit id nisi.</p>
+
+					<p class="largertext">Nunc convallis ornare fermentum. Morbi ac risus et est imperdiet sollicitudin at eu risus. Morbi leo leo, rhoncus nec commodo at, consectetur a dui. Nullam metus quam, dignissim sit amet tristique vitae, condimentum ac magna. Praesent vitae ante nisl, eget molestie tellus. Aliquam enim sem, porta in molestie quis, ornare a tellus. Suspendisse vitae eros diam, sed blandit purus. Donec quam lacus, semper eu hendrerit ac, convallis at massa. Ut nisl nisi, rutrum eu facilisis eget, commodo in nibh. Cras vehicula neque scelerisque ligula pharetra eu porttitor risus ornare. Nulla facilisi.</p>
+					
+					<ul>
+						<li>In a diam turpis, sit amet pretium diam.</li>
+						<li>Fusce vel risus vel purus vulputate egestas.  Sed et sapien vel nunc luctus convallis eget vitae metus.</li>
+						<li>Curabitur placerat nunc ipsum, eget feugiat arcu.</li>
+						<li>Duis volutpat sem sit amet magna consectetur ac condimentum sem commodo. Ut faucibus diam vel sapien porttitor vestibulum.</li>
+						<li>Praesent tempor lacus non mi consectetur quis commodo tellus pharetra.</li>
+						<li>Suspendisse tincidunt vehicula metus, vitae vehicula risus dictum in.</li>
+					</ul>
+
+					<p class="largertext">Etiam aliquet, risus ut pellentesque mollis, sem odio sodales dui, vitae condimentum metus diam vel eros. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce et eleifend velit. Curabitur vel ullamcorper mi. Aenean ipsum nisl, molestie tempus tincidunt sed, tempor eu libero. Aliquam imperdiet tortor sed massa facilisis mattis. Phasellus a mauris vitae odio malesuada porttitor et at ipsum. Morbi tristique dapibus commodo. Donec quis nisl erat. Nam non mi et ligula interdum sollicitudin non a mauris. Maecenas in nunc mauris, facilisis ultrices tellus. Vivamus laoreet mollis tempor.</p>
+					
+					<p class="largertext">Nulla dapibus venenatis egestas. Donec aliquam risus eu tellus sodales convallis ut at odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In vestibulum nunc vitae augue lacinia vitae tincidunt quam sodales. </p>
+						
+					<p class="largertext">Morbi quis scelerisque diam. Aenean bibendum, mi id faucibus gravida, lorem magna aliquam mi, eu eleifend quam libero id magna. Aenean commodo, orci malesuada tempor mattis, ligula odio porttitor orci, vitae ultricies ligula neque a est. Vestibulum commodo dolor in augue convallis eget vulputate felis feugiat. In ut augue ac enim feugiat malesuada sed nec lacus. Curabitur ut leo sem, quis fermentum dolor. </p>
+				</div>
+				
+				
+									<h1 class="textleft">&nbsp;&nbsp;&nbsp;Recent Activity</h1>
+									
+									
+				<div class="span2">
+					<img src="imgPlaceholder.png" height="175" width="150">
+				</div>
+				<div class="span3 offset1 thinborderbottom">
+					<h5 class="imgrow textleft">Lorem ipsum.</h5> <p small>Dolor sit amet, consectetur adipiscing elit. Nulla pulvinar lobortis ipsum non gravida. Ut auctor, orci quis rhoncus scelerisque, est diam rutrum tortor, ac bibendum est lorem ac massa.</p>
+				</div>
+				
+				<div class="span2">
+					<img src="imgPlaceholder.png" height="175" width="150">
+				</div>
+				<div class="span3 offset1 thinborderbottom">
+					<h5 class="imgrow textleft">Dolor sit amet</h5><p small>consectetur adipiscing elit. Nulla pulvinar lobortis ipsum non gravida. Ut auctor, orci quis rhoncus scelerisque, est diam rutrum tortor, ac bibendum est lorem ac massa.</p>
+				</div>
+				
+				<div class="span2">
+					<img src="imgPlaceholder.png" height="175" width="150">
+				</div>
+				<div class="span3 offset1 thinborderbottom">
+					<h5 class="imgrow textleft">Consectetur adipiscing elit.</h5><p small> Nulla pulvinar lobortis ipsum non gravida. Ut auctor, orci quis rhoncus scelerisque, est diam rutrum tortor, ac bibendum est lorem ac massa. Dolor sit amet.</p>
+				</div>
+				
+				<div class="span2">
+					<img src="imgPlaceholder.png" height="175" width="150">
+				</div>
+				<div class="span3 offset1 thinborderbottom">
+					<h5 class="imgrow textleft">Ut auctor.</h5><p small>consectetur adipiscing elit. Nulla pulvinar lobortis ipsum non gravida. Orci quis rhoncus scelerisque, est diam rutrum tortor, ac bibendum est lorem ac massa.</p>
+				</div>
+				
+
+					
+			</div>
+		</div>
+			
+
+
+		
+		<div class="row">
+			<div class="footer">
+				<div class="container">
+					<div class="span3">
+						<h6>ABOUT</h6>
+						<a href="#">About communiCITY</a><br />
+						<a href="#">FAQ</a><br />
+						<a href="#">News and Updates</a>
+					</div>
+					<div class="span3">
+						<h6>CONTACT</h6>
+						<a href="#">Questions?</a><br />
+						<a href="#">Like us on Facebook</a><br />
+						<a href="#">Follow us on Twitter</a>
+					</div>
+					<div class="span3 offset3">
+						<a href="#">PRIVACY POLICY</a><br />
+						<a href="#">TERMS OF USE</a><br />
+						<a href="#">CONTENT GUIDELINES</a><br />
+						<a href="#">COMMUNITY PARTNERS</a><br />
+						<a href="#">BLOG</a>
+					</div>
+					<div class="span3">
+						<a href="#"><img src="facebook.png"></a>
+						<a href="#"><img src="twitter.png"></a>
+						<a href="#"><img src="google+color.png"></a>
+						<a href="#"><img src="rss.png"></a>
+						<a href="#"><img src="blogger.png"></a>
+						<a href="#"><img src="youtube.png"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+</html>

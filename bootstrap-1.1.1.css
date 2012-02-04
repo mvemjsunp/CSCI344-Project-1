@@ -728,24 +728,26 @@ pre {
 	float: right;
 }
 .belowtitle {
-	background-color: #f9f9f9;
+	background-color: #FFCE00;
 	margin-top: -70px;
 	padding: 15px 0px 20px 0px;
-
-	border-top: 1px solid #999;
+	border-bottom: 1px solid #666;
+	border-top: 10px solid #01689C;
 }
 
 .descriptor {
-	background-color: #EFE4E7;
+	background-color: #01689C;
 	padding: 30px 0px;
+	margin-top: -20px;
+	border-bottom: 10px solid #86CEEA;
 }
 .descriptor p {
 	font-size: 30px;
 	color:#3a3a3a;
 	line-height: 40px;
 	font-weight: bold;
-	background-color: #EFE4E7;
-	padding: 10px 40px;
+	background-color: #fff;
+	padding: 30px 40px;
 }
 
 .nomargincenter {
@@ -754,16 +756,24 @@ pre {
 }
 
 .marginminus {
-	margin: -55px -30px 0px 0px;
+	margin: -45px 0px 0px 0px;
 }
 
 .marginminuslogo {
 	margin: -55px 0px -10px 0px;
 }
 
+.marginminusless {
+	margin: -15px 0px 0px 0px;
+}
+
+.marginminusmore {
+	margin-top: -90px;
+}
+
 .topbottompadding {
-	padding-top: 35px;
-	padding-bottom: 35px;
+	padding-top: 30px;
+	padding-bottom: 55px;
 }
 
 .bigh2 {
@@ -773,17 +783,32 @@ pre {
 	font-size: 32px;
 }
 .imgrow {
-	background: #934159;
-	color: #efefef;
-	font-size: 17px;
+	color: #3f3f3f;
+	font-size: 24px;
 	text-align: center;
+	
+}
+.imgpadding {
+	padding-left:5px;
+	padding-right:5px;
 }
 
 .marginminusleft {
 	margin-left: -20px;
 }
 .marginminustop {
-	margin-top: -15px;
+	margin-top: -25px;
+	padding-top: 40px;
+}
+.yellowbg {
+	background: #FFCE00;
+}
+.textleft {
+	text-align: left;
+}
+
+.yellowborderbottom {
+	border-bottom: 8px solid #FFCE00;
 }
 
 /* Forms.less
@@ -1508,7 +1533,7 @@ table .headerSortUp.purple, table .headerSortDown.purple {
   border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 .hero-unit {
-  background-color: #EFE4E7;
+  background-color: #fff;
   margin-top: 60px;
   margin-bottom: 30px;
   padding: 60px;
@@ -1527,9 +1552,10 @@ table .headerSortUp.purple, table .headerSortDown.purple {
   font-weight: 200;
   line-height: 27px;
 }
-footer {
-  margin-top: 17px;
-  padding-top: 17px;
+.footer {
+  margin-top:20px;
+  padding-top: 50px;
+  margin-bottom: 50px;
   border-top: 1px solid #eee;
 }
 .page-header {

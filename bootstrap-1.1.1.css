@@ -732,7 +732,7 @@ pre {
 	float: left;
 }
 .belowtitle {
-	background-color: #FFCE00;
+	background-color: #222;
 	margin-top: -70px;
 	padding: 15px 0px 20px 0px;
 	border-bottom: 1px solid #666;
@@ -772,7 +772,7 @@ pre {
 }
 
 .marginminusmore {
-	margin-top: -90px;
+	margin-top: -60px;
 }
 
 .topbottompadding {
@@ -805,7 +805,7 @@ pre {
 	padding-top: 40px;
 }
 .yellowbg {
-	background: #FFCE00;
+	background: #fff5f5;
 }
 .textleft {
 	text-align: left;
@@ -824,6 +824,10 @@ pre {
 
 .largertext {
 	font-size: 16px;
+}
+
+.bluetext{
+	color: #fff5f5;
 }
 
 .borderright {
